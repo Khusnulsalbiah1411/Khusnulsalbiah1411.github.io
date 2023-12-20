@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pemrograman Web 1 </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Resume Website Template Free Download" name="keywords">
+        <meta content="Resume Website Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/profile1.jpg" alt="Image">
+                </div>
+                <div class="sidebar-content">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">Navigation</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#header">Home<i class="fa fa-home"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#biografi">Biografi<i class="fa fa-address-card"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experience">Experience<i class="fa fa-star"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Answer">Answer No 1<i class="fa fa-tasks"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#portfolio">Portfolio<i class="fa fa-file-archive"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact<i class="fa fa-envelope"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="sidebar-footer">
+                    <a href="https://www.facebook.com/siti.k.salbiah/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/salsanirahua/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn" href="https://wa.me/6281210676747"><i class="fab fa-whatsapp"></i></a>
+
+
+                </div>
+            </div>
+            <div class="content">
+                <!-- Header Start -->
+                <script>
+                    function downloadResume() {
+                        // Mengambil isi halaman web
+                        var content = document.documentElement.outerHTML;
+                
+                        // Membuat objek Blob
+                        var blob = new Blob([content], { type: 'text/html' });
+                
+                        // Membuat objek URL
+                        var url = window.URL.createObjectURL(blob);
+                
+                        // Membuat elemen anchor
+                        var a = document.createElement('a');
+                
+                        // Memberikan atribut pada elemen anchor
+                        a.href = url;
+                        a.download = 'MyResume.html';
+                
+                        // Menambahkan elemen anchor ke dokumen
+                        document.body.appendChild(a);
+                
+                        // Mengklik elemen anchor secara otomatis
+                        a.click();
+                
+                        // Menghapus elemen anchor setelah selesai
+                        document.body.removeChild(a);
+                
+                        // Melepaskan objek URL
+                        window.URL.revokeObjectURL(url);
+                    }
+                </script>
+                
+                <div class="header" id="header" style="background: linear-gradient(to right, rgb(245, 240, 235), rgb(214, 189, 143));">
+                    <div class="content-inner">
+                        <p>I'm</p>
+                        <h1>Siti Khusnul Salbiah</h1>
+                        <h2></h2>
+                        <div class="typed-text">Tailor, Singer and Guitarist, Designer</div>
+                    </div>
+                </div>
+                
+                <!-- Header End -->
+               <!------ Large Button Start -->
+                <div class="large-btn">
+                    <div class="content-inner">
+                        <a class="btn" href="#" onclick="downloadResume()"><i class="fa fa-download"></i>Resume</a>
+                        <a class="btn" href="#contact" id="hire-me-btn"><i class="fa fa-hands-helping"></i>Hire Me</a>
+                    </div>
+                </div>
+                <!-- Large Button End -->
+                
+                <!-- Biografi Start -->
+                <div class="biografi" id="biografi">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Biografi</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-lg-5">
+                                <img src="img/about.jpg" alt="Image">
+                            </div>
+                            <div class="col-md-6 col-lg-7" style="text-align: justify;">
+                                <p>Siti Khusnul Salbiah atau sering dipanggil Khusnul memiliki hobi bernyanyi dan bermain gitar. Ia lahir di kota Tangerang pada tanggal 14 November 2000, Khusnul merupakan anak tunggal.
+                                    Ia pertama kali masuk sekolah di tahun 2006-2012 di SD MI Al-Istiqomah, Setelah lulus ia melanjutkannya ke SMP Islamic Centre dari tahun 2012-2015. </p>
+                                    <p>Kemudian ia melanjutkan sekolah ke SMK Voctech 2 di Tangerang,Di SMK ini ia mengikuti kegiatan ekstrakurikuler Paskibra, 
+                                        Akustik dan English Club. Bahkan ia pun sempat menjabat sebagai Miss Voctech 2018 di sekolahnya.  dan saat ini sedang menempuh pendidikan S1 nya di Universitas Pamulang dengan mengambil jurusan Teknik Informatika.</p>
+                                <p>Sambil menempuh pendidikannya, ia juga mempunyai usaha menjahit kebaya di rumahnya ia percaya bahwa keanekaragaman minat ini memperkaya hidup dan memberi saya wawasan yang berbeda dalam menghadapi tantangan dan kesempatan. 
+                                    ia berusaha untuk menggabungkan pengetahuan teknis dari jurusan IT dengan kreativitas dalam menjahit dan musik.</p>
+                            </div>
+                            
+                        </div>
+                        <h2>SKILL</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="skills">
+                                    <div class="skill-name">
+                                        <p>Design</p><p>85%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>Sewing</p><p>85%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skills">
+                                    <div class="skill-name">
+                                        <p>Singing</p><p>90%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>Guitar Playing</p><p>80%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About End -->
+                
+                <!-- Education Start -->
+                <div class="education" id="education">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Education</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2006 <i>to</i> 2012</span>
+                                    <h3>Elementary School</h3>
+                                    <p>SD MI AL-ISTIQOMAH</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2015<i>to</i>2018</span>
+                                    <h3>Vocational School</h3>
+                                    <p>SMK VOCTECH 2 TANGERANG</p>
+                                    <p>Computer and Network Engineering</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2012<i>to</i>2015</span>
+                                    <h3>Junior High School</h3>
+                                    <p>SMP ISLAMIC CENTRE</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2021<i>until</i>Now</span>
+                                    <h3>Undergraduate</h3>
+                                    <p>UNIVERSITY PAMULANG</p>
+                                    <P>Informatics Engineering S1</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education Start -->
+                
+                <!-- Experience Start -->
+                <div class="experience" id="experience">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Experience</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>2018 <i>to</i> 2019</span>
+                                    <h3>Field Industrial Practice</h3>
+                                    <h4>TANGERANG CITY</h4>
+                                    <h5>BANDARA SOEKARNO HATTA</h5>
+                                    <p>Data Entry, Making Finger Scanner</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>2020<i>until</i>Now</span>
+                                    <h3>Sewing</h3>
+                                    <h4>TANGERANG CITY</h4>
+                                    <h5>BUTIK MIRA MODISTE</h5>
+                                    <p>Making bridal kebaya </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience Start -->
+
+                 <!-- Achievement Start-->
+                 <div class="experience" id="experience">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Achievement</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>2018</span>
+                                    <p>Earning a first place scholarship in class</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>2019</span>
+                                    <p>Selected as Best Internship Graduate at PT Kopkar GMF Soekarno Hatta Airport.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>2018</span>
+                                    <p>Miss Voctech 2018 Champion at Vocational School</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>2019</span>
+                                    <p>1st place in Poetry Musicalization Competition</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Achievement Start -->
+                
+                <!-- Answer Start -->
+                <div class="Answer" id="Answer">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Answer</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-15">
+                                <div class="srv-col" style="text-align: justify;">
+                                    <h3>1. Jelaskan cara kerja Website serta jelaskan hubungan antara Web Server, Domain, dan Hosting !</h3>
+                                    <p><b>Jawab : </b></p>
+                                    <p>Cara kerja website : Website berfungsi ketika pengguna memasukkan alamat domain, browser mengonversi 
+                                        ke alamat IP melalui server DNS, dan terhubung ke web server. Server memproses permintaan, mengirimkan halaman web, 
+                                        yang ditampilkan di browser, memungkinkan akses dan interaksi dengan konten melalui internet.</p>
+                                    <p>Hubungan : Web server menyimpan dan mengelola konten situs web.
+                                        Domain digunakan sebagai alamat unik untuk mengakses situs web tersebut.
+                                        Hosting menyediakan ruang server dan sumber daya untuk menyimpan dan membuat situs web dapat diakses secara online.
+                                        Dengan kerjasama ketiganya, pengguna dapat mengakses suatu situs web dengan memasukkan domain di browser mereka. Domain diarahkan ke alamat IP 
+                                        yang sesuai dengan web server, dan konten situs disajikan melalui hosting.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Answer Start -->
+                
+                <!-- Portfolio Start -->
+                <div class="portfolio" id="portfolio">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Portofolio</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ul id="portfolio-flters">
+                                    <li data-filter="*" class="filter-active">All</li>
+                                    <li data-filter=".web-des">DESIGNER</li>
+                                    <li data-filter=".web-dev">SINGER</li>
+                                    <li data-filter=".dig-mar">GUITARIST</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row portfolio-container">
+                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/portfolio-1.png" class="img-fluid" alt="">
+                                        <a href="img/portfolio-1.png" data-lightbox="portfolio"  class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/portfolio-2.png" class="img-fluid" alt="">
+                                        <a href="img/portfolio-2.png" class="link-preview" data-lightbox="portfolio" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/portfolio-3.jpg" class="img-fluid" alt="">
+                                        <a href="img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio"  title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/portfolio-4.jpg" class="img-fluid" alt="">
+                                        <a href="img/portfolio-4.jpg" class="link-preview" data-lightbox="portfolio"  title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/portfolio-5.jpg" class="img-fluid" alt="">
+                                        <a href="img/portfolio-5.jpg" class="link-preview" data-lightbox="portfolio"  title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/portfolio-6.png" class="img-fluid" alt="">
+                                        <a href="img/portfolio-6.png" class="link-preview" data-lightbox="portfolio"  title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio End -->
+                
+               
+                <!-- Contact Start -->
+                <div class="contact" id="contact">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-10">
+                                <div class="contact-info">
+                                    <p><i class="fa fa-user"></i>Siti Khusnul Salbiah</p>
+                                    <p><i class="fa fa-tag"></i>Designer, Singer and Guitarist</p>
+                                    <p><i class="fa fa-envelope"></i><a href="mailto:khusnul141100@gmail.com">khusnul141100@gmail.com</a></p>
+                                    <p><i class="fa fa-phone"></i><a href="tel:+6281210676747">+62-8121-0676-747</a></p>
+                                    <p><i class="fa fa-map-marker"></i>Danau Toba 4 Street No 13, TANGERANG</p>
+                                    <div class="social">
+                                        <a class="btn" href="https://www.facebook.com/siti.k.salbiah/"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" href="https://www.instagram.com/salsanirahua/"><i class="fab fa-instagram"></i></a>
+                                        <a class="btn" href="https://www.youtube.com/channel/UCgAnG_F9EFnoCxnutP2YiXg"><i class="fab fa-youtube"></i></a>
+                                        <a class="btn" href="https://wa.me/6281210676747"><i class="fab fa-whatsapp"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact End -->
+                
+                
+            </div>
+        </div>
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
